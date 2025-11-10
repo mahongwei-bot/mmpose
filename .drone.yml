@@ -18,6 +18,9 @@ platform:
   arch: amd64
   os: linux
 
+node:
+  docker: build_only
+
 trigger:
   branch:
     - master
@@ -87,6 +90,9 @@ name: PR validation build mmpose images
 platform:
   arch: amd64
   os: linux
+
+node:
+  docker: build_only
 
 trigger:
   event:
